@@ -12,12 +12,18 @@
  Se quiser ajudar, aceito dicas de como melhorar.
  
  ## ❯ Instalação
- ``` bash
+ ``` shell
  $ git clone https://github.com/yabamiah/ctemp.git
  $ cd ctemp
- $ make
+ $ make install
+ ```
+
+ ## ❯ Desinstalar
+ ``` shell
+ $ cd ctemp
+ $ make uninstall
  ```
  ## ❯ Executar
  Só usar este comando após compilar```./ctemp```, e se por acaso não esteja executável, basta rodar```chmod +x ctemp```.
  ### ❯ Ctemp
- ![image](img/2022-01-16_scrot.png)
+ ![image](img/2022-05-07_22-17.png)

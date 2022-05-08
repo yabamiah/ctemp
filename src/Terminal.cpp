@@ -17,15 +17,16 @@ int menu()
 {
     int opcao;
 
-    std::cout << ("\n\tEscolha uma das opções abaixo:");
-    std::cout << ("\n\t------------------------------\n");
-    std::cout << ("\t1- Celsius para Fahrenheit");
-    std::cout << ("\n\t2- Celsius para Kelvin");
-    std::cout << ("\n\t3- Fahrenheit para Celsius");
-    std::cout << ("\n\t4- Fahrenheit para Kelvin");
-    std::cout << ("\n\t5- Kelvin para Celsius");
-    std::cout << ("\n\t6- Kelvin para Fahrenheit");
-    std::cout << ("\n\t------------------------------\n\t> ");
+    std::cout << ("\n\t╔═════════════════════════════╗\n");
+    std::cout << ("\t║Escolha uma das opções abaixo║\n");
+    std::cout << ("\t╠═════════════════════════════╣\n");
+    std::cout << ("\t║ 1. Celsius para Fahrenheit  ║");
+    std::cout << ("\n\t║ 2. Celsius para Kelvin      ║");
+    std::cout << ("\n\t║ 3. Fahrenheit para Celsius  ║");
+    std::cout << ("\n\t║ 4. Fahrenheit para Kelvin   ║");
+    std::cout << ("\n\t║ 5. Kelvin para Celsius      ║");
+    std::cout << ("\n\t║ 6. Kelvin para Fahrenheit   ║");
+    std::cout << ("\n\t╚═════════════════════════════╝\n\t❯ ");
 
     std::cin >> opcao;
 

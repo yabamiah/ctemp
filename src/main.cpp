@@ -3,9 +3,9 @@
 #include <stdlib.h>
 #include <locale.h>
 
-#include "../include/TempConversion.hpp"
-#include "../include/Terminal.hpp"
-#include "../include/MyTime.hpp"
+#include "TempConversion.hpp"
+#include "Terminal.hpp"
+#include "MyTime.hpp"
 
 // Função principal
 // |------------------|
@@ -27,48 +27,48 @@ int main()
     // Saudações
     // |--------|
     printCtemp();
-    std::cout << "\033[1;93m               |·Bem-Vindo·|\033[0m\n";
+    std::cout << "\033[1;93m               |·Bem-Vindo·|\033[0m\n" << std::endl;
 
     do
     {
         switch (menu())
         {
         case 1:
-            std::cout << ("\nDigite a temperatura em Celsius: ");
+            std::cout << ("\n\tDigite a temperatura em Celsius: ");
             std::cin >> input;
-            std::cout << ("\nA temperatura em Fahrenheit é: ") << celsiusFahrenheit(input);
+            std::cout << ("\n\tA temperatura em Fahrenheit é: ") << celsiusFahrenheit(input);
             break;
         case 2:
-            std::cout << ("\nDigite a temperatura em Celsius: ");
+            std::cout << ("\n\tDigite a temperatura em Celsius: ");
             std::cin >> input;
-            std::cout << ("\nA temperatura em Kelvin é: ") << celsiusKelvin(input);
+            std::cout << ("\n\tA temperatura em Kelvin é: ") << celsiusKelvin(input);
             break;
         case 3:
-            std::cout << ("\nDigite a temperatura em Fahrenheit: ");
+            std::cout << ("\n\tDigite a temperatura em Fahrenheit: ");
             std::cin >> input;
-            std::cout << ("\nA temperatura em Kelvin é: ") << fahrenheitCelsius(input);
+            std::cout << ("\n\tA temperatura em Kelvin é: ") << fahrenheitCelsius(input);
             break;
         case 4:
-            std::cout << ("\nDigite a temperatura em Fahrenheit: ");
+            std::cout << ("\n\tDigite a temperatura em Fahrenheit: ");
             std::cin >> input;
-            std::cout << ("\nA temperatura em Celsius é: ") << fahrenheitKelvin(input);
+            std::cout << ("\n\tA temperatura em Celsius é: ") << fahrenheitKelvin(input);
             break;
         case 5:
-            std::cout << ("\nDigite a temperatura em Kelvin: ");
+            std::cout << ("\n\tDigite a temperatura em Kelvin: ");
             std::cin >> input;
-            std::cout << ("\nA temperatura em Celsius é: ") << kelvinCelsius(input);
+            std::cout << ("\n\tA temperatura em Celsius é: ") << kelvinCelsius(input);
             break;
         case 6:
-            std::cout << ("\nDigite a temperatura em Kelvin: ");
+            std::cout << ("\n\tDigite a temperatura em Kelvin: ");
             std::cin >> input;
-            std::cout << ("\nA temperatura em Fahrenheit é: ") << kelvinFahrenheit(input);
+            std::cout << ("\n\tA temperatura em Fahrenheit é: ") << kelvinFahrenheit(input);
             break;
         default:
-            printf("\nOpção inválida!\n");
+            printf("\n\tOpção inválida!\n");
         }
 
         // Final da ação
-        std::cout << ("\n\nDeseja fazer outra conversão(S/N)? ");
+        std::cout << ("\n\n\tDeseja fazer outra conversão(S/N)? ");
         std::cin >> reniciarPrograma;
 
         clear();
@@ -77,7 +77,8 @@ int main()
     // Marcando o tempo final
     // |--------------------|
     clock_t t2 = tac();
-    std::cout << "Tempo de processamento: " << CompTime(t1, t2) << " ms\n";
 
-    std::cout << ("----------Fim do programa----------");
+    std::cout << "  Tempo de processamento: " << CompTime(t1, t2) << " ms\n";
+
+    std::cout << ("\033[1;95m├───────⛅─\033[0m Fim do programa \033[1;95m─⛅───────┤\033[0m");
 }
