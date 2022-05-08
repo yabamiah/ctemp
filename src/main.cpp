@@ -80,5 +80,5 @@ int main()
 
     std::cout << "  Tempo de processamento: " << CompTime(t1, t2) << " ms\n";
 
-    std::cout << ("\033[1;95m├───────⛅─\033[0m Fim do programa \033[1;95m─⛅───────┤\033[0m");
+    std::cout << ("\033[1;95m├───────⛅─\033[0m Fim do programa \033[1;95m─⛅───────┤\033[0m") << std::endl;
 }
