@@ -26,13 +26,14 @@ all: $(BIN) $(LIB)
 
 $(LIB): $(LIB_SOURCES) $(INCLUDES)
 	@$(MKDIR)
-	g++ -o obj/TempConversion.o -c src/TempConversion.cpp $(CXXFLAGS)
-	g++ -o obj/MyTime.o -c src/MyTime.cpp $(CXXFLAGS)
-	g++ -o obj/Terminal.o -c src/Terminal.cpp $(CXXFLAGS)
-	ar rcs lib/libtemp.a obj/*.o
+	@g++ -o obj/TempConversion.o -c src/TempConversion.cpp $(CXXFLAGS)
+	@g++ -o obj/MyTime.o -c src/MyTime.cpp $(CXXFLAGS)
+	@g++ -o obj/Terminal.o -c src/Terminal.cpp $(CXXFLAGS)
+	@ar rcs lib/libtemp.a obj/*.o
 
 $(BIN): $(MAIN) $(INCLUDES) $(LIB)
-	g++ -o $@ $< $(CXXFLAGS)
+	@g++ -o $@ $< $(CXXFLAGS)
+	@echo "Successfully build!"
 
 .PHONY: install
 install:
