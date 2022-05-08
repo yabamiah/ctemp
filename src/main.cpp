@@ -46,12 +46,12 @@ int main()
         case 3:
             std::cout << ("\n\tDigite a temperatura em Fahrenheit: ");
             std::cin >> input;
-            std::cout << ("\n\tA temperatura em Kelvin é: ") << fahrenheitCelsius(input);
+            std::cout << ("\n\tA temperatura em Celsius é: ") << fahrenheitCelsius(input);
             break;
         case 4:
             std::cout << ("\n\tDigite a temperatura em Fahrenheit: ");
             std::cin >> input;
-            std::cout << ("\n\tA temperatura em Celsius é: ") << fahrenheitKelvin(input);
+            std::cout << ("\n\tA temperatura em Kelvin é: ") << fahrenheitKelvin(input);
             break;
         case 5:
             std::cout << ("\n\tDigite a temperatura em Kelvin: ");
