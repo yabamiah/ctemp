@@ -24,6 +24,6 @@
  $ make uninstall
  ```
  ## ❯ Executar
- Só usar este comando após compilar```./ctemp```, e se por acaso não esteja executável, basta rodar```chmod +x ctemp```.
+ Só usar este comando após compilar```./bin/ctemp```, e se por acaso não esteja executável, basta rodar```chmod +x ctemp```.
  ### ❯ Ctemp
  ![image](assets/2022-05-07_22-17.png)
